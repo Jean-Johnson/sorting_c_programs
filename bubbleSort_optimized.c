@@ -1,7 +1,7 @@
 #include<stdio.h>
-#include<stdbool.h>
+#include<stdbool.h> //include this header to use bool datatype in c
 int temp;
-swap(int *big,int *small){
+swap(int *big,int *small){ //swap ar[j] with ar[j+1]
 	temp=*big;
 	*big=*small;
 	*small=temp;
@@ -17,8 +17,8 @@ void bubbleSort(int ar[], int n){
 				swapped=true;
 			}
 		}
-		if(swapped==false)
-			break;
+		if(swapped==false)//if no swap occurs in a pass
+			break;   //then sort is completed so break the loop
 	}
 }
 void main(){
