@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int temp;
 void swap(int *oldsmall, int *newsmall){
 	temp=*oldsmall;
@@ -32,9 +33,10 @@ void selectSort(int ar[],int n){
 	}
 }
 void main(){
-	int i,n,ar[1000];
-	printf("[+]Enter the number of elements(<1000) >> ");
+	int i,n,*ar;
+	printf("[+]Enter the number of elements >> ");
 	scanf("%d",&n);
+	ar=(int *)malloc(n*sizeof(int));
 	printf("[+]Enter the elements >> \n");
 	for(i=0;i<n;i++)
 		scanf("%d",&ar[i]);

@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<stdbool.h> //include this header to use bool datatype in c
 int temp;
 swap(int *big,int *small){ //swap ar[j] with ar[j+1]
@@ -22,11 +23,12 @@ void bubbleSort(int ar[], int n){
 	}
 }
 void main(){
-	int i,n,ar[1000];
-	printf("[+]Enter the number of elements(<1000) >> ");
+	int i,n,*ar;
+	printf("[+]Enter the number of elements >> ");
 	scanf("%d",&n);
+	ar=(int *)malloc(n*sizeof(int));
 	printf("[+]Enter the elements >> \n");
-	for(i-0;i<n;i++)
+	for(i=0;i<n;i++)
 		scanf("%d",&ar[i]);
 	bubbleSort(ar,n);
 	printf("[+]The sorted array is >> \n");

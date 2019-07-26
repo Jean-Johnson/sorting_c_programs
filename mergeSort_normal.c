@@ -39,9 +39,10 @@ void mergeSort(int ar[],int left,int right){
 }
 
 void main(){
-	int i,n,ar[1000];
+	int i,n,*ar;
 	printf("[+]Enter the number of elements(<1000) >> ");
 	scanf("%d",&n);
+	ar=(int *)malloc(n*sizeof(int));
 	printf("[+]Enter the numbers >> \n");
 	for(i=0;i<n;i++)
 		scanf("%d",&ar[i]);

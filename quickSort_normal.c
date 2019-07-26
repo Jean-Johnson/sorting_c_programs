@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 int temp;
 void swap(int *big,int *small){
 	temp=*big;
@@ -25,8 +26,8 @@ void quickSort(int ar[],int start,int end){
 	}
 }
 void main(){
-	int ar[1000],n,i;
-	printf("[+]Enter the limit(<1000) >> ");
+	int *ar,n,i;
+	printf("[+]Enter the limit >> ");
 	scanf("%d",&n);
 	printf("[+]Enter the numbers >> \n");
 	for(i=0;i<n;i++)

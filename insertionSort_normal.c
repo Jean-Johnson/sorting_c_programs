@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdio.h>
 void insertSort(int ar[],int n){
 	int i,j,k;
 	for(i=1;i<n;i++){
@@ -12,8 +13,8 @@ void insertSort(int ar[],int n){
 	}
 }
 void main(){
-	int i,n,ar[1000];
-	printf("[+]Enter the number of elements(<1000) >> ");
+	int i,n,*ar;
+	printf("[+]Enter the number of elements >> ");
 	scanf("%d",&n);
 	printf("[+]Enter the number >>\n");
 	for(i=0;i<n;i++)
